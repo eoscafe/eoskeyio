@@ -1,0 +1,40 @@
+{
+  "name": "EOSKEY.IO",
+  "version": "1.0.0",
+  "description": "Convert Ethereum Private Key to EOS Key",
+  "productName": "eoskeyio",
+  "cordovaId": "org.cordova.quasar.app",
+  "author": "Syed Jafri <syed.jafri2@ucalgary.ca>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "eosjs-ecc": "^4.0.1",
+    "ethereumjs-util": "^5.2.0",
+    "quasar": "0.0.18",
+    "vue-i18n": "^7.7.0"
+  },
+  "devDependencies": {
+    "devtron": "1.4.0",
+    "autoprefixer": "^8.5.1",
+    "prettier": "^1.12.1",
+    "electron": "1.8.3",
+    "electron-debug": "1.5.0",
+    "electron-devtools-installer": "2.2.1",
+    "electron-packager": "11.1.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "quasar-cli": "^0.15.14"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}
