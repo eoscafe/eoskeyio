@@ -1,15 +1,20 @@
 const messages = {
   en: {
     sidebar: {
-      convertEthereumKeyToEOSKey: 'Convert Ethereum Key to EOS Key',
-      mainnetRegister: 'Mainnet Register',
-      createAndConfirmEOSKeys: 'Create and Confirm EOS Key Pairs',
+      tools: 'Tools',
+      mainnetRegister: 'Mainnet Fallback Registration',
       generateAndValidateKeys: 'Generate and Validate Keys',
-      download: 'Download Offline'
+      download: 'Download Offline',
+      sourceCode: 'Full Source Code'
     },
     register: {
-      warning: 'WARNING',
-      warningMessage: 'This tool only works if you have sent atleast 1 outgoing transaction from ethereum account and have NOT registered your EOS yet!',
+      title: 'Mainnet Fallback Registration',
+      conditionContent1: `Be aware, you are only eligible for fallback registration if:`,
+      conditionContent2: `If you're eligible for fallback registration, use this tool to generate your EOS private key.`,
+      condition1: `(1) You failed to register`,
+      condition2: `(2) You registered a malformed key`,
+      condition3: `(3) You had an outgoing transaction from your ethereum address within the block range of the snapshot.`,
+      condition4: `(4) Your address is not a contract.`,
       convertPrivateTitle: 'Convert Ethereum Private Key to EOS Private Key',
       convertPublicTitle: 'Convert Ethereum Public Key to EOS Public Key',
       generatePrivateButton: 'Generate EOS Private Key',
@@ -36,21 +41,25 @@ const messages = {
       languageTitle: 'Language',
       validKeyPair: 'Valid Key Pair!',
       invalidPrivateKey: 'Invalid Private Key.',
-      invalidPublicKey: 'Invalid Public Key.',
-      warning: 'WARNING'
+      invalidPublicKey: 'Invalid Public Key.'
     }
   },
   zh_cn: {
     sidebar: {
-      convertEthereumKeyToEOSKey: '转换以太坊密钥为EOS 密钥',
+      tools: 'Tools',
       mainnetRegister: '主网注册',
-      createAndConfirmEOSKeys: '生成并确认EOS 密钥对',
       generateAndValidateKeys: '生成并校验密钥对',
-      download: '下载'
+      download: '下载',
+      sourceCode: '全部源代码'
     },
     register: {
-      warning: '警告',
-      warningMessage: '这个工具必须在你的以太坊地址至少成功的发生过一次交易，并且没有被EOS 注册的情况下才会生效',
+      title: '主网注册回撤',
+      conditionContent1: `请注意，只有在下列情况下，你才需要进行回撤`,
+      conditionContent2: `如果你的条件符合回撤，使用这个工具来生成你的EOS私钥`,
+      condition1: `(1) 你的注册失败`,
+      condition2: `(2) 你注册了一个异常的密钥`,
+      condition3: `(3) 在快照时，你的以太坊账户上仍然有一笔尚未完成的交易.`,
+      condition4: `(4) 你的地址不是一个合约.`,
       convertPrivateTitle: ' 转换以太坊私钥为EOS私钥',
       convertPublicTitle: '转换以太坊公钥为EOS 公钥',
       generatePrivateButton: '生成EOS私钥',
@@ -77,21 +86,25 @@ const messages = {
       languageTitle: '语言',
       validKeyPair: '验证密钥对',
       invalidPrivateKey: '不正确的私钥',
-      invalidPublicKey: '不正确的公钥',
-      warning: '警告'
+      invalidPublicKey: '不正确的公钥'
     }
   },
   kr: {
     sidebar: {
-      convertEthereumKeyToEOSKey: '이더리움 키를 EOS 키로 변환',
+      tools: '툴킷',
       mainnetRegister: '메인넷 등록',
-      createAndConfirmEOSKeys: 'EOS 키 쌍 생성 및 승인',
       generateAndValidateKeys: '키 생성 및 유효성 검증',
-      download: '다운로드'
+      download: '다운로드',
+      sourceCode: '전체 소스 코드'
     },
     register: {
-      warning: '경고',
-      warningMessage: '이 툴은 아직 EOS를 정상 등록하지 못하신 분들에게만 정상적으로 동작하며,  적어도 한번 이상의 외부 트랜잭션이 일어난 이더리움 계정에 한해 사용이 가능합니다.',
+      title: '메인넷 비상 등록',
+      conditionContent1: `다음과 같은 경우에만 비상 등록 자격이 있음을 유의하십시오.`,
+      conditionContent2: `비상 등록 자격이 있는 경우 이 툴킷을 사용하여 EOS 개인 키를 생성하십시오.`,
+      condition1: `(1) 등록에 실패했습니다.`,
+      condition2: `(2) 잘못된 키를 등록했습니다.`,
+      condition3: `(3) 스냅 샷의 블록 범위에 이더리움 주소로부터 외부로 발생된 트랜잭션이 있습니다.`,
+      condition4: `(4) 여러분의 주소는 컨트랙트가 아닙니다.`,
       convertPrivateTitle: '이더리움 프라이빗 키를 EOS 프라이빗 키로 변경',
       convertPublicTitle: '이더리움 퍼블릭키를 EOS 퍼블릭 키로 변경',
       generatePrivateButton: 'EOS 프라이빗 키 생성',
@@ -118,17 +131,25 @@ const messages = {
       languageTitle: '언어',
       validKeyPair: '유효하지 않은 공개키',
       invalidPrivateKey: '유효하지 않은 개인키',
-      invalidPublicKey: '유효하지 않은 공개키',
-      warning: '경고'
+      invalidPublicKey: '유효하지 않은 공개키'
     }
   },
   es: {
     sidebar: {
-      download: 'Descargar'
+      tools: 'Herramientas',
+      mainnetRegister: 'Registro Red Principal',
+      generateAndValidateKeys: 'Generar y validar Keys',
+      download: 'Descargar',
+      sourceCode: 'Código Fuente Completo'
     },
     register: {
-      warning: 'ADVERTENCIA',
-      warningMessage: 'This tool only works if you have sent atleast 1 outgoing transaction from ethereum account and have NOT registered your EOS yet!',
+      title: 'Registro de respaldo de la red principal',
+      conditionContent1: `Ten en cuenta que solamente eres elegido para respaldar registro si:`,
+      conditionContent2: `Si eres elegido para respaldar registro, usa esta herramienta para generar tu private key de EOS.`,
+      condition1: `(1) Registro fallido`,
+      condition2: `(2) Registraste una llave malformada`,
+      condition3: `(3) Tuviste una transacción saliente desde tu dirección ethereum junto con el rango de bloque del snapshot.`,
+      condition4: `(4) Tu dirección no es un contrato.`,
       convertPrivateTitle: 'Convertir Private Key de Ethereum a Private Key de EOS',
       convertPublicTitle: 'Convertir Public Key de Ethereum a Public Key de EOS',
       generatePrivateButton: 'Generar Private Key de EOS',
@@ -155,8 +176,7 @@ const messages = {
       languageTitle: 'Idioma',
       validKeyPair: 'Validar Key Pair!',
       invalidPrivateKey: 'Invalidar Private Key.',
-      invalidPublicKey: 'Invalidar Public Key.',
-      warning: 'ADVERTENCIA'
+      invalidPublicKey: 'Invalidar Public Key.'
     }
   }
 }

@@ -1,6 +1,6 @@
 {
     "name": "org.cordova.quasar.app",
-    "displayName": "EOS Key",
+    "displayName": "eoskeyio",
     "version": "1.0.0",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
     "main": "index.js",

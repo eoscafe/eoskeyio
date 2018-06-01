@@ -1,17 +1,29 @@
 <template>
   <q-page padding>
-    <main>
-      <div class="left-side">
+      <div class="">
         <!-- VALIDATE KEY PAIR-->
-        <div class="title">{{ $t('register.warning') }}:</div>
-        {{$t('register.warningMessage')}}
+        <div class="title"><b>{{ $t('register.title') }}:</b></div>
+        
+        {{$t('register.conditionContent1')}}
+        <br>
+        {{$t('register.condition1')}}
+        <br>
+        {{$t('register.condition2')}}
+        <br>
+        {{$t('register.condition3')}}
+        <br>
+        {{$t('register.condition4')}}
+        <br><br>
+        {{$t('register.conditionContent2')}}
 
         <div class="doc" style="padding-top: 30px;">
-          <div class="title">{{ $t('register.convertPrivateTitle') }}</div>
-          <p>
-            {{ $t('register.ethereumPrivateKey') }}:
+          <div class="title"><b>{{ $t('register.convertPrivateTitle') }}</b></div>
+          <p class="row">
+            <div class="col-md-6">
+              {{ $t('register.ethereumPrivateKey') }}:
+            </div>
             <span style="padding-left: 7px"/>
-            <input class="form-style" v-model="ethereumPrivateKey" :placeholder="$t('register.ethereumPrivateKeyText')">
+            <input class="form-style col-md-6" v-model="ethereumPrivateKey" :placeholder="$t('register.ethereumPrivateKeyText')">
           </p>
 
           <!--<p class="mid-text" style="width: 400px">{{ $t('register.ethereumPublicKey')}} : {{ ethereumPublicKey }}</p>-->
@@ -23,16 +35,15 @@
           {{ statusMessage }}
         </div>
 
-        <div class="doc" style="padding-top: 30px;">
-          <div class="title">{{ $t('register.languageTitle') }}</div>
-          <button class="alt" @click="switchLanguage('en')">English</button>
-          <button class="alt" @click="switchLanguage('es')">Español</button>
-          <button class="alt" @click="switchLanguage('zh_cn')">简体中文</button>
-          <button class="alt" @click="switchLanguage('kr')">한국어</button>
+        <div class="doc big-gutter" style="padding-top: 30px;">
+          <div class="title col-xs-12">{{ $t('register.languageTitle') }}</div>
+          <button class="alt col-xs-6 col-md-3" @click="switchLanguage('en')">English</button>
+          <button class="alt col-xs-6 col-md-3" @click="switchLanguage('es')">Español</button>
+          <button class="alt col-xs-6 col-md-3" @click="switchLanguage('zh_cn')">简体中文</button>
+          <button class="alt col-xs-6 col-md-3" @click="switchLanguage('kr')">한국어</button>
         </div>
 
       </div>
-    </main>
   </div>
 </q-page>
 
@@ -81,7 +92,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css">
   .mid-text {
     padding-top: 10px;
     text-overflow: ellipsis;
@@ -170,7 +181,7 @@ export default {
 
   .form-style {
     display: inline;
-    width: 600px;
+    width: 100%;
     padding: 6px 12px;
     padding: .375rem .75rem;
     font-size: 16px;

@@ -34,36 +34,21 @@
         inset-delimiter>
 
         <img id="logo" src="../assets/eos_collab.png" class="center" style="width:250px;padding-top: 10px;" alt="EOS Calgary x EOS Cafe">
-
-        <q-list-header>{{ $t('sidebar.convertEthereumKeyToEOSKey') }}</q-list-header>
+        <q-list-header>{{ $t('sidebar.tools') }}</q-list-header>
         <q-item @click.native="openPage('/')">
           <q-item-side icon="fa fa-registered" />
           <q-item-main :label="$t('sidebar.mainnetRegister')"/>
         </q-item>
 
-        <q-list-header>{{ $t('sidebar.createAndConfirmEOSKeys') }}</q-list-header>
         <q-item @click.native="openPage('generate')">
           <q-item-side icon="fa fa-key" />
           <q-item-main :label="$t('sidebar.generateAndValidateKeys')"/>
         </q-item>
 
-        <q-list-header v-if="showDownload">{{ $t('sidebar.download') }}</q-list-header>
-
-        <a href="/statics/browser.zip" class="q-item q-item-division relative-position" download>
-            <q-item-side icon="fa fa-download" />
-            <q-item-main label="Browser"/>
-        </a>
-        <a href="/statics/eoskeyio-macos-x64.zip" class="q-item q-item-division relative-position" download>
-            <q-item-side icon="fab fa-apple" />
-            <q-item-main label="MacOS"/>
-        </a>
-        <a href="/statics/eoskeyio-win32-x64.zip" class="q-item q-item-division relative-position" download>
-            <q-item-side icon="fab fa-windows" />
-            <q-item-main label="Windows"/>
-        </a>
-        <a href="/statics/eoskeyio-linux-x64.zip" class="q-item q-item-division relative-position" download>
-            <q-item-side icon="fab fa-linux" />
-            <q-item-main label="Linux"/>
+        <q-list-header>Github</q-list-header>
+        <a target="_blank" href="https://github.com/eoscafe/eoskeyio" class="q-item q-item-division relative-position">
+            <q-item-side icon="fab fa-github" />
+            <q-item-main :label="$t('sidebar.sourceCode')"/>
         </a>
       </q-list>
     </q-layout-drawer>
