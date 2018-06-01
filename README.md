@@ -26,7 +26,7 @@ For our global supporters, we have made the app available in English, Spanish, M
 To use the tool, all you have to do is:
 1. Head on over to [EOSKEY.IO](http://eoskey.io).
 2. Download offline version for your platform and turn off your internet.
-3. Generate your mainnet EOS keys!
+3. Run the .app/.exe/unix executable to generate your mainnet EOS keys!
 
 It is that simple :)
 
