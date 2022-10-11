@@ -24,7 +24,7 @@
     "electron": "1.8.3",
     "electron-debug": "1.5.0",
     "electron-devtools-installer": "2.2.1",
-    "electron-packager": "11.1.0",
+    "electron-packager": "16.0.0",
     "electron-winstaller": "^2.6.4",
     "prettier": "^1.12.1",
     "quasar-cli": "^0.15.14"
